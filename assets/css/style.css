@@ -559,11 +559,11 @@ body {
   }
 
   .hero-content h1 {
-    font-size: var(--fs-xl);
+    font-size: var(--fs-heading);
   }
 
   .hero-content p {
-    font-size: var(--fs-sm);
+    font-size: var(--fs-lg);
   }
 
   .heros-card {
@@ -572,18 +572,16 @@ body {
   }
 
   .card-title {
-    font-size: var(--fs-sm);
+    font-size: var(--fs-lg);
   }
 }
 
 /* Small Mobile (max-width: 480px) */
 @media (max-width: 480px) {
-  .hero-content h1 {
-    font-size: var(--fs-lg);
-  }
+
 
   .hero-content p {
-    font-size: var(--fs-xs);
+    font-size: var(--fs-sm);
   }
 
   .hero-btn {

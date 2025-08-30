@@ -659,6 +659,18 @@ body {
   text-transform: uppercase;
 }
 
+.title-items a {
+  font-family: var(--font-manrope);
+  font-weight: var(--fw-bold);
+  font-size: var(--fs-lg);
+  color: var(--text-on-light);
+  padding: 12px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+
 /* ===================== Sections Tiket ===================== */
 .container {
   display: grid;

@@ -1,0 +1,319 @@
+/* ===================== Fonts ===================== */
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+@font-face {
+    font-family: "Helvetica";
+    src: url(/assets/fonts/Helvetica\ Light\ Condensed.otf) format("truetype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: url(/assets/fonts/Helvetica\ Bold\ Condensed.otf) format("truetype");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "Helvetica";
+    src: url(/assets/fonts/Helvetica\ Ultra\ Compressed.otf) format("truetype");
+    font-weight: 900;
+}
+
+/* ===================== Root Variables ===================== */
+:root {
+    --font-helvetica: "Helvetica", sans-serif;
+    --font-manrope: "Manrope", sans-serif;
+
+    --fw-thin: 100;
+    --fw-extralight: 200;
+    --fw-light: 300;
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+    --fw-extrabold: 800;
+    --fw-ultra: 900;
+
+    --color-black: #121212;
+    --color-dark: #1c1c1c;
+    --color-gray-dark: #2e2e2e;
+    --color-gray: #808080;
+    --color-gray-light: #c4c4c4;
+    --color-white: #ffffff;
+
+    --color-primary: var(--color-white);
+    --color-primary-light: var(--color-gray-light);
+    --color-secondary: var(--color-gray);
+    --color-accent: var(--color-black);
+
+    --hover-link: var(--color-gray-light);
+    --active-link: var(--color-white);
+
+    --text-primary: var(--color-white);
+    --text-secondary: var(--color-gray-light);
+    --text-on-dark: var(--color-white);
+    --text-on-light: var(--color-black);
+
+    --bg-light: var(--color-white);
+    --bg-dark: var(--color-black);
+    --bg-gray: var(--color-gray-dark);
+
+    --bg-light-hover: #f2f2f2;
+    --bg-dark-hover: #1a1a1a;
+    --bg-gray-hover: #3a3a3a;
+
+    --fs-xs: clamp(0.875rem, 0.8vw, 1rem);
+    --fs-sm: clamp(1rem, 1vw, 1.125rem);
+    --fs-md: clamp(1.125rem, 1.2vw, 1.25rem);
+    --fs-lg: clamp(1.375rem, 1.8vw, 1.75rem);
+    --fs-xl: clamp(1.75rem, 2.5vw, 2.25rem);
+    --fs-xxl: clamp(2.25rem, 3.5vw, 3rem);
+    --fs-heading: clamp(2.75rem, 4.5vw, 3.5rem);
+    --fs-display: clamp(3.5rem, 6vw, 4.5rem);
+
+    --radius-sm: 4px;
+    --radius: 8px;
+    --radius-lg: 16px;
+
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+    --shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+    --shadow-lg: 0 6px 12px rgba(0, 0, 0, 0.12);
+}
+
+/* ===================== Reset ===================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: var(--font-helvetica);
+    color: var(--text-on-light);
+    background: var(--bg-light);
+}
+
+body {
+    overscroll-behavior-x: none;
+    overflow-x: hidden;
+}
+
+a {
+    color: var(--text-on-light);
+    text-decoration: none;
+}
+
+/* ===================== Header ===================== */
+.header {
+    width: 100%;
+    padding: 12px;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+    transition: box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.header.scrolled {
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+    border-radius: var(--radius);
+}
+
+.page-title {
+    font-family: var(--font-manrope);
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-extrabold);
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--text-on-light);
+}
+
+@media (max-width: 768px) {
+    .header .container {
+        padding: 10px;
+    }
+    .page-title {
+        font-size: 22px;
+    }
+}
+
+/* ===================== Hero Section ===================== */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--text-primary);
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("/assets/img/Home-Bg.png") center/cover no-repeat;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+/* ===================== Price List ===================== */
+.price-list {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+
+    background: var(--bg-light);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+}
+
+.price-list h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: var(--font-manrope);
+    font-weight: var(--fw-bold);
+}
+
+.price-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.price-list th,
+.price-list td {
+    padding: 12px;
+    text-align: left;
+    font-family: var(--font-manrope);
+    font-weight: var(--fw-medium);
+    border-bottom: 1px solid #ddd;
+}
+
+.price-list th {
+    font-weight: var(--fw-extrabold);
+    background: var(--bg-light-hover);
+}
+
+.contact {
+    margin: 20px;
+    text-align: center;
+}
+
+.contact .btn-wa {
+    display: inline-block;
+    padding: 12px 20px;
+    border-radius: var(--radius);
+    font-weight: bold;
+    background: var(--bg-light-hover);
+    color: var(--text-primary);
+}
+
+/* ===================== Footer ===================== */
+.footer {
+    padding-bottom: 2rem;
+    font-size: 16px;
+    line-height: 1.6;
+
+    font-family: var(--font-manrope);
+    background: var(--bg-dark-hover);
+    color: var(--text-primary);
+    transition: 0.5s;
+}
+
+.footer__container {
+    max-width: 968px;
+    margin: 0 1.5rem;
+    display: grid;
+    gap: 1.5rem;
+}
+
+.footer__title {
+    margin-bottom: 0.75rem;
+    font-size: var(--fs-md);
+    font-weight: var(--fw-bold);
+    line-height: 1.5;
+}
+
+.footer__container h1 {
+    margin-bottom: 0.75rem;
+    font-size: var(--fs-lg);
+    font-weight: var(--fw-bold);
+    line-height: 1.5;
+    text-transform: uppercase;
+}
+
+.footer__links {
+    list-style: none;
+    display: grid;
+    row-gap: 0.5rem;
+}
+
+.footer__link {
+    font-size: var(--fs-xs);
+    color: darkgray;
+    text-decoration: none;
+}
+
+.footer__link:hover {
+    color: rgb(213, 213, 213);
+    text-decoration: underline;
+}
+
+.footer__copy {
+    margin-top: 6rem;
+    text-align: center;
+    font-size: var(--fs-xs);
+    width: 100%;
+}
+
+/* ===================== Footer Responsive ===================== */
+@media screen and (max-width: 360px) {
+    .footer {
+        padding: 3.5rem 0 1rem;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    .footer__container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .footer {
+        padding: 6rem 0 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .footer__container {
+        margin-left: auto;
+        margin-right: auto;
+        column-gap: 3rem;
+    }
+}

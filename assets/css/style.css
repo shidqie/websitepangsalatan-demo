@@ -384,18 +384,27 @@ body {
 
 /* ===================== HERO SECTION ===================== */
 .hero {
-  background: url('/assets/img/Home-Bg.png') center/cover no-repeat fixed;
+  background-image: url('/assets/img/Home-Bg.png');
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: scroll;
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   min-height: 100vh;
   min-height: 100dvh;
   padding: clamp(40px, 6vw, 120px);
+
   color: var(--text-primary);
   position: relative;
   overflow: hidden;
+
+  background-color: #000;
 }
+
 
 
 .hero-container {
@@ -1550,9 +1559,6 @@ body.dark-mode .nav-menu li a:hover {
 
   .hero-section {
     padding: 40px 20px;
-    min-height: auto;
-    background-position: center top;
-    background-size: cover;
   }
 
   .hero-container {
@@ -1586,7 +1592,7 @@ body.dark-mode .nav-menu li a:hover {
   }
 
   .social-sidebar {
-    padding: 42px 20px;
+    padding: 40px 12px;
     gap: 24px;
   }
 

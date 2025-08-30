@@ -385,23 +385,18 @@ body {
 /* ===================== HERO SECTION ===================== */
 .hero {
   background: url('/assets/img/Home-Bg.png') center/cover no-repeat fixed;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  min-height: 100dvh;
   padding: clamp(40px, 6vw, 120px);
   color: var(--text-primary);
   position: relative;
   overflow: hidden;
 }
 
-.hero::before {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.4);
-  z-index: 0;
-}
 
 .hero-container {
   display: grid;

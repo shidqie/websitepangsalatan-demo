@@ -194,16 +194,17 @@ document.addEventListener("DOMContentLoaded", () => {
     new Swiper(".mySwiper", {
         slidesPerView: 1,
         spaceBetween: 20,
-        loop: true, // aktifkan looping
+        loop: true,
+        loopedSlides: 10,
         centeredSlides: true,
-        speed: 800, // transisi halus
-        loopAdditionalSlides: 2, // clone ekstra untuk smooth looping
-        watchSlidesProgress: true, // update transform slide saat looping
-        watchSlidesVisibility: true, // prev/next slide tetap stabil
+        speed: 1200, 
+        slidesPerGroup: 1, 
         autoplay: {
-            delay: 4000,
+            delay: 4500,
             disableOnInteraction: false,
         },
+        watchSlidesProgress: true,
+        watchSlidesVisibility: true,
         pagination: {
             el: ".swiper-pagination",
             clickable: true,

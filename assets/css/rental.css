@@ -89,7 +89,7 @@
 
 html {
     scroll-behavior: smooth;
-    font-family: var(--font-helvetica);
+    font-family: var(--font-manrope);
     color: var(--text-on-light);
     background: var(--bg-light);
 }
@@ -97,11 +97,11 @@ html {
 body {
     overscroll-behavior-x: none;
     overflow-x: hidden;
+    color: var(--text-on-light);
 }
 
 a {
     color: var(--text-on-light);
-    text-decoration: none;
 }
 
 /* ===================== Header ===================== */
@@ -140,8 +140,8 @@ a {
 
 .page-title {
     font-family: var(--font-manrope);
-    font-size: var(--fs-lg);
     font-weight: var(--fw-extrabold);
+    font-size: var(--fs-lg);
     text-align: center;
     text-transform: uppercase;
     color: var(--text-on-light);
@@ -151,6 +151,7 @@ a {
     .header .container {
         padding: 10px;
     }
+
     .page-title {
         font-size: 22px;
     }
@@ -166,11 +167,13 @@ a {
     justify-content: center;
     align-items: center;
 
-    color: var(--text-primary);
-    background: 
+    background:
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url("/assets/img/Home-Bg.png") center/cover no-repeat;
+
+    color: var(--text-primary);
 }
+
 
 .hero h1 {
     font-size: 2.5rem;
@@ -182,7 +185,7 @@ a {
     opacity: 0.9;
 }
 
-/* ===================== Price List ===================== */
+/* ===================== Main ===================== */
 .price-list {
     max-width: 800px;
     margin: 20px auto;
@@ -224,14 +227,26 @@ a {
     text-align: center;
 }
 
-.contact .btn-wa {
-    display: inline-block;
-    padding: 12px 20px;
-    border-radius: var(--radius);
-    font-weight: bold;
-    background: var(--bg-light-hover);
-    color: var(--text-primary);
+.btn-booking {
+  border-radius: var(--radius-lg);
+  background: var(--bg-light);
+  color: var(--text-on-light);
+  font-family: var(--font-manrope);
+  font-weight: var(--fw-extrabold);
+  font-size: var(--fs-xs);
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  padding: 8px 20px;
+  transition: all 0.3s ease;
 }
+
+.btn-booking:hover {
+  background: var(--bg-gray-hover);
+  color: var(--text-primary);
+  transform: scale(1.05);
+}
+
 
 /* ===================== Footer ===================== */
 .footer {

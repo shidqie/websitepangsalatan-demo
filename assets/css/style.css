@@ -69,7 +69,7 @@
   --fs-sm: clamp(1rem, 1vw, 1.125rem);
   --fs-md: clamp(1.125rem, 1.2vw, 1.25rem);
   --fs-lg: clamp(1.5rem, 2vw, 1.75rem);
-  --fs-xl: clamp(2rem, 3vw, 2.5rem);
+  --fs-xl: clamp(1.8rem, 3vw, 2.5rem);
   --fs-xxl: clamp(3rem, 4vw, 3.5rem);
   --fs-display: clamp(4rem, 6vw, 5rem);
   --fs-heading: clamp(3.5rem, 5vw, 4.5rem);
@@ -1221,9 +1221,9 @@ textarea {
 }
 
 .title {
-  font-family: var(--font-helvetica);
+  font-family: var(--font-manrope);
   font-weight: var(--fw-extrabold);
-  font-size: var(--fs-xxl);
+  font-size: var(--fs-xl);
   color: var(--text-on-light);
   text-transform: uppercase;
   line-height: 1.2;
@@ -1237,7 +1237,7 @@ textarea {
 }
 
 .faq-card {
-  background: var;
+  background: var(--bg-light-hover);
   border-radius: 8px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
   padding: 15px 20px;
@@ -1602,7 +1602,7 @@ body.dark-mode .nav-menu li a:hover {
   }
 
   .container-faq .title {
-    text-align: center;
+    text-align: left;
   }
 
   .social-sidebar {
@@ -1693,7 +1693,7 @@ body.dark-mode .nav-menu li a:hover {
   }
 
   .title {
-    font-size: var(--fs-xxl);
+    font-size: var(--fs-xl);
   }
 
   .slider-item {

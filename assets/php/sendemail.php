@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $to = ""; //email 
+    $to = "marketingwisataalampangsalatan@gmail.com"; 
     
     $name    = htmlspecialchars($_POST["first_name"]);
     $email   = htmlspecialchars($_POST["user_email"]);

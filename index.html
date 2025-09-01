@@ -18,6 +18,7 @@
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" as="style">
 
     <!-- CSS External -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
@@ -27,7 +28,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap" rel="stylesheet">
 
-    <!-- PWA Manifest -->
+    <!-- Icon -->
     <link rel="icon" href="favicon.png" type="image/x-icon">
 </head>
 
@@ -99,272 +100,358 @@
     <section id="home" class="section-home hero">
         <div class="hero-container">
             <!-- Left Content -->
-            <div class="hero-content">
-                <h1>Wisata Alam<br />Pangsalatan</h1>
-                <p>
+            <div class="hero-content" data-aos="fade-right" data-aos-duration="1600" data-aos-easing="ease-in-out"
+                data-aos-delay="100">
+                <h1 class="hero-title">Wisata Alam<br />Pangsalatan</h1>
+                <p class="hero-subtitle" data-aos="fade-up" data-aos-duration="1600" data-aos-easing="ease-in-out"
+                    data-aos-delay="300">
                     Where the forest whispers, the mountains stand tall.<br />
                     Where mornings are crisp, and nights glow with stars.<br />
                     Adventure meets peace in every step you take.<br />
                     Pangsalatan — your home in the wild.
                 </p>
-                <button class="more-btn">Learn More</button>
+                <button class="more-btn" data-aos="zoom-in" data-aos-duration="1600" data-aos-easing="ease-in-out"
+                    data-aos-delay="500">
+                    Learn More
+                </button>
             </div>
 
             <!-- Right Cards -->
-            <div class="hero-cards-wrapper">
+            <div class="hero-cards-wrapper" data-aos="fade-left" data-aos-duration="1800" data-aos-easing="ease-in-out"
+                data-aos-delay="200">
                 <div class="hero-cards">
-                    <div class="heros-card" style="background-image: url('/assets/img/EU-1.png')">
+                    <div class="heros-card" style="background-image: url('/assets/img/EU-1.png')" data-aos="zoom-in"
+                        data-aos-duration="1400" data-aos-easing="ease-in-out" data-aos-delay="200">
                         <span class="card-title">EUCALYPTUS 1</span>
                     </div>
-                    <div class="heros-card" style="background-image: url('/assets/img/EU-2.png')">
+                    <div class="heros-card" style="background-image: url('/assets/img/EU-2.png')" data-aos="zoom-in"
+                        data-aos-duration="1400" data-aos-easing="ease-in-out" data-aos-delay="300">
                         <span class="card-title">EUCALYPTUS 2</span>
                     </div>
-                    <div class="heros-card" style="background-image: url('/assets/img/EU-3.png')">
+                    <div class="heros-card" style="background-image: url('/assets/img/EU-3.png')" data-aos="zoom-in"
+                        data-aos-duration="1400" data-aos-easing="ease-in-out" data-aos-delay="400">
                         <span class="card-title">EUCALYPTUS 3</span>
                     </div>
-                    <div class="heros-card" style="background-image: url('/assets/img/EU-4.png')">
+                    <div class="heros-card" style="background-image: url('/assets/img/EU-4.png')" data-aos="zoom-in"
+                        data-aos-duration="1400" data-aos-easing="ease-in-out" data-aos-delay="500">
                         <span class="card-title">EUCALYPTUS 4</span>
                     </div>
-                    <div class="heros-card" style="background-image: url('/assets/img/EU-2.png')">
+                    <div class="heros-card" style="background-image: url('/assets/img/EU-2.png')" data-aos="zoom-in"
+                        data-aos-duration="1400" data-aos-easing="ease-in-out" data-aos-delay="600">
                         <span class="card-title">EUCALYPTUS 5</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
     <!-- ===================== Sections Package ===================== -->
     <section id="package" class="section-package">
-        <div class="title-section-header">
+        <div class="title-section-header" data-aos="fade-down" data-aos-duration="1200">
             <h1>PACKAGE</h1>
         </div>
-        <div class="slider-wrapper">
+        <div class="slider-wrapper" data-aos="zoom-out-up" data-aos-duration="1200">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    <!-- CAMP -->
+                    <!-- CAMP RIVERSIDE -->
                     <div class="swiper-slide">
                         <div class="card-camp">
                             <div class="card-image" style="background-image:url('/assets/img/CAMP-RIVERSIDE.png');">
                             </div>
                             <div class="card-description">
-                                <div class="price">Rp. 750.000<span class="per-day">/Day</span></div>
-                                <div class="duration">Duration : 2 Days 1 Night/ 4 Person</div>
+                                <div class="price">Rp. 750.000<span class="per-day">/day</span></div>
+                                <div class="duration">Duration : 2 Days 1 Night</div>
                                 <div class="divider"></div>
                                 <ul class="facility">
                                     <li>HTM (4 Person)</li>
+                                    <li>Asuransi</li>
+                                    <li>Tenda Arpenaz 4.1</li>
+                                    <li>Lampu Tenda</li>
+                                    <li>Kasur Set</li>
+                                    <li>Meja + Kursi</li>
+                                    <li>Dispenser + Air Mineral</li>
+                                    <li>Charge Listrik</li>
+                                    <li>MCK</li>
+                                    <li>Kayu Bakar</li>
+                                    <li>Breakfast (4 Box)</li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="title-items"><a
-                                href="https://wa.me/6281214475081?text=Halo%20kak%2C%20saya%20ingin%20memesan%20CAMP%20RIVERSIDE.%20Mohon%20infonya%20terima%20kasih!"
-                                target="_blank">CAMP RIVERSIDE</a></div>
+                        <div class="title-items">
+                            <a href="https://wa.me/6281214475081?text=Halo%20kak%2C%20saya%20ingin%20memesan%20CAMP%20RIVERSIDE.%20Mohon%20infonya%20terima%20kasih!"
+                                target="_blank">CAMP RIVERSIDE</a>
+                        </div>
                     </div>
-                    <!-- CAMP -->
+
+                    <!-- CAMP CERIA -->
                     <div class="swiper-slide">
                         <div class="card-camp">
                             <div class="card-image" style="background-image:url('/assets/img/CAMP-FAMILY1.png');">
                             </div>
                             <div class="card-description">
-                                <div class="price">Rp. 750.000<span class="per-day">/Day</span></div>
-                                <div class="duration">Duration : 2 Days 1 Night/ 4 Person</div>
+                                <div class="price">Rp. 250.000<span class="per-day">/day</span></div>
+                                <div class="duration">Minimal : 2 Person</div>
                                 <div class="divider"></div>
                                 <ul class="facility">
-                                    <li>HTM (4 Person)</li>
+                                    <li>HTM (1 Person)</li>
+                                    <li>Asuransi</li>
+                                    <li>Tenda Arpenaz 4.0</li>
+                                    <li>Lampu Tenda</li>
+                                    <li>Kasur Set</li>
+                                    <li>Meja + Kursi</li>
+                                    <li>Kompor + Gas</li>
+                                    <li>Dispenser + Air Mineral</li>
+                                    <li>Charge Listrik</li>
+                                    <li>MCK</li>
+                                    <li>Kayu Bakar</li>
+                                    <li>Meals 3x</li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="title-items"><a
-                                href="https://wa.me/6281214475081?text=Halo%20kak%2C%20saya%20ingin%20memesan%20CAMP%20RIVERSIDE.%20Mohon%20infonya%20terima%20kasih!"
-                                target="_blank">CAMP FAMILY 1</a></div>
+                        <div class="title-items">
+                            <a href="https://wa.me/6281214475081?text=Halo%20kak%2C%20saya%20ingin%20memesan%20CAMP%20CERIA.%20Mohon%20infonya%20terima%20kasih!"
+                                target="_blank">CAMP CERIA 1</a>
+                        </div>
                     </div>
-                    <!-- CAMP -->
+
+                    <!-- CAMP CERIA -->
                     <div class="swiper-slide">
                         <div class="card-camp">
                             <div class="card-image" style="background-image:url('/assets/img/CAMP-FAMILY2.png');">
                             </div>
                             <div class="card-description">
-                                <div class="price">Rp. 750.000<span class="per-day">/Day</span></div>
-                                <div class="duration">Duration : 2 Days 1 Night/ 4 Person</div>
+                                <div class="price">Rp. 250.000<span class="per-day">/day</span></div>
+                                <div class="duration">Minimal : 2 Person</div>
                                 <div class="divider"></div>
                                 <ul class="facility">
-                                    <li>HTM (4 Person)</li>
+                                    <li>HTM (1 Person)</li>
+                                    <li>Asuransi</li>
+                                    <li>Tenda Arpenaz 4.0</li>
+                                    <li>Lampu Tenda</li>
+                                    <li>Kasur Set</li>
+                                    <li>Meja + Kursi</li>
+                                    <li>Kompor + Gas</li>
+                                    <li>Dispenser + Air Mineral</li>
+                                    <li>Charge Listrik</li>
+                                    <li>MCK</li>
+                                    <li>Kayu Bakar</li>
+                                    <li>Meals 3x</li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="title-items"><a
-                                href="https://wa.me/6281214475081?text=Halo%20kak%2C%20saya%20ingin%20memesan%20CAMP%20RIVERSIDE.%20Mohon%20infonya%20terima%20kasih!"
-                                target="_blank">CAMP FAMILY 2</a></div>
+                        <div class="title-items">
+                            <a href="https://wa.me/6281214475081?text=Halo%20kak%2C%20saya%20ingin%20memesan%20CAMP%20CERIA.%20Mohon%20infonya%20terima%20kasih!"
+                                target="_blank">CAMP CERIA 2</a>
+                        </div>
                     </div>
-                    <!-- CAMP -->
+
+                    <!-- CAMP FAMILY -->
                     <div class="swiper-slide">
                         <div class="card-camp">
                             <div class="card-image" style="background-image:url('/assets/img/CAMP-FAMILY1.png');">
                             </div>
                             <div class="card-description">
-                                <div class="price">Rp. 750.000<span class="per-day">/Day</span></div>
-                                <div class="duration">Duration : 2 Days 1 Night/ 4 Person</div>
+                                <div class="price">Rp. 650.000<span class="per-day">/day</span></div>
+                                <div class="duration">Duration : 2 Days 1 Night</div>
                                 <div class="divider"></div>
                                 <ul class="facility">
                                     <li>HTM (4 Person)</li>
+                                    <li>Asuransi</li>
+                                    <li>Tenda Arpenaz 4.0</li>
+                                    <li>Lampu Tenda</li>
+                                    <li>Kasur Set</li>
+                                    <li>Dispenser + Air Mineral</li>
+                                    <li>Charge Listrik</li>
+                                    <li>MCK</li>
+                                    <li>Kayu Bakar</li>
+                                    <li>Breakfast (4 Box)</li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="title-items"><a
-                                href="https://wa.me/6281214475081?text=Halo%20kak%2C%20saya%20ingin%20memesan%20CAMP%20RIVERSIDE.%20Mohon%20infonya%20terima%20kasih!"
-                                target="_blank">CAMP CERIA 1</a></div>
+                        <div class="title-items">
+                            <a href="https://wa.me/6281214475081?text=Halo%20kak%2C%20saya%20ingin%20memesan%20CAMP%20FAMILY.%20Mohon%20infonya%20terima%20kasih!"
+                                target="_blank">CAMP FAMILY 1</a>
+                        </div>
                     </div>
-                    <!-- CAMP -->
+
+                    <!-- CAMP FAMILY -->
                     <div class="swiper-slide">
                         <div class="card-camp">
                             <div class="card-image" style="background-image:url('/assets/img/CAMP-FAMILY2.png');">
                             </div>
                             <div class="card-description">
-                                <div class="price">Rp. 750.000<span class="per-day">/Day</span></div>
-                                <div class="duration">Duration : 2 Days 1 Night/ 4 Person</div>
+                                <div class="price">Rp. 650.000<span class="per-day">/day</span></div>
+                                <div class="duration">Duration : 2 Days 1 Night</div>
                                 <div class="divider"></div>
                                 <ul class="facility">
                                     <li>HTM (4 Person)</li>
+                                    <li>Asuransi</li>
+                                    <li>Tenda Arpenaz 4.0</li>
+                                    <li>Lampu Tenda</li>
+                                    <li>Kasur Set</li>
+                                    <li>Dispenser + Air Mineral</li>
+                                    <li>Charge Listrik</li>
+                                    <li>MCK</li>
+                                    <li>Kayu Bakar</li>
+                                    <li>Breakfast (4 Box)</li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="title-items"><a
-                                href="https://wa.me/6281214475081?text=Halo%20kak%2C%20saya%20ingin%20memesan%20CAMP%20RIVERSIDE.%20Mohon%20infonya%20terima%20kasih!"
-                                target="_blank">CAMP CERIA 2</a></div>
-                    </div>
-                    <!-- CAMP -->
-                    <div class="swiper-slide">
-                        <div class="card-camp">
-                            <div class="card-image" style="background-image:url('/assets/img/CAMP-FAMILY2.png');">
-                            </div>
-                            <div class="card-description">
-                                <div class="price">Rp. 750.000<span class="per-day">/Day</span></div>
-                                <div class="duration">Duration : 2 Days 1 Night/ 4 Person</div>
-                                <div class="divider"></div>
-                                <ul class="facility">
-                                    <li>HTM (4 Person)</li>
-                                </ul>
-                            </div>
+                        <div class="title-items">
+                            <a href="https://wa.me/6281214475081?text=Halo%20kak%2C%20saya%20ingin%20memesan%20CAMP%20FAMILY.%20Mohon%20infonya%20terima%20kasih!"
+                                target="_blank">CAMP FAMILY 2</a>
                         </div>
-                        <div class="title-items"><a
-                                href="https://wa.me/6281214475081?text=Halo%20kak%2C%20saya%20ingin%20memesan%20CAMP%20RIVERSIDE.%20Mohon%20infonya%20terima%20kasih!"
-                                target="_blank">CAMP BALCONY</a></div>
                     </div>
+
                 </div>
             </div>
+        </div>
     </section>
-
 
     <!-- ===================== Sections Program ===================== -->
     <section id="package" class="section-program">
-        <div class="title-section-header">
-            <h1>Program</h1>
+        <div class="title-section-header" data-aos="fade-down" data-aos-duration="1200">
+            <h1>Program Package</h1>
         </div>
-        <div class="title-items">OUTBOOND</div>
-        <div class="slider-wrapper">
-            <div class="swiper mySwiper" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+        <div class="slider-wrapper" data-aos="zoom-out-up" data-aos-duration="1200">
+            <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
-                    <!-- Program -->
-                    <div class="swiper-slide">
-                        <div class="card-camp">
-                            <div class="card-image" style="background-image:url('/assets/img/CAMP-FAMILY2.png');">
-                            </div>
-                            <div class="card-description">
-                                <div class="price">Rp. 650.000<span class="per-day">/Day</span></div>
-                                <div class="duration">Duration : 2 Days 1 Night/ 4 Person</div>
-                                <div class="divider"></div>
-                                <ul class="facility">
-                                    <li>HTM (4 Person)</li>
-                                    <li>Asuransi</li>
-                                    <li>Tenda Arpenaz 4.0</li>
-                                    <li>Lampu Tenda</li>
-                                    <li>Matras Spon</li>
-                                    <li>Charge listrik</li>
-                                    <li>MCK</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="title-items">CAMP BALCONY</div>
-                    </div>
 
                     <!-- Program -->
                     <div class="swiper-slide">
                         <div class="card-camp">
-                            <div class="card-image" style="background-image:url('/assets/img/CAMP-FAMILY2.png');">
-                            </div>
-                            <div class="card-description">
-                                <div class="price">Rp. 650.000<span class="per-day">/Day</span></div>
-                                <div class="duration">Duration : 2 Days 1 Night/ 4 Person</div>
-                                <div class="divider"></div>
-                                <ul class="facility">
-                                    <li>HTM (4 Person)</li>
-                                    <li>Asuransi</li>
-                                    <li>Tenda Arpenaz 4.0</li>
-                                    <li>Lampu Tenda</li>
-                                    <li>Matras Spon</li>
-                                    <li>Charge listrik</li>
-                                    <li>MCK</li>
-                                </ul>
-                            </div>
+                            <div class="card-image" style="background-image:url('/assets/img/program/ldks.jpg');"></div>
+                            <div class="card-description"></div>
                         </div>
-                        <div class="title-items">CAMP BALCONY</div>
+                        <div class="title-items">LDKS</div>
                     </div>
 
-                    <!-- Program -->
                     <div class="swiper-slide">
                         <div class="card-camp">
-                            <div class="card-image" style="background-image:url('/assets/img/CAMP-FAMILY2.png');">
+                            <div class="card-image" style="background-image:url('/assets/img/program/outbound.jpg');">
                             </div>
-                            <div class="card-description">
-                                <div class="price">Rp. 650.000<span class="per-day">/Day</span></div>
-                                <div class="duration">Duration : 2 Days 1 Night/ 4 Person</div>
-                                <div class="divider"></div>
-                                <ul class="facility">
-                                    <li>HTM (4 Person)</li>
-                                    <li>Asuransi</li>
-                                    <li>Tenda Arpenaz 4.0</li>
-                                    <li>Lampu Tenda</li>
-                                    <li>Matras Spon</li>
-                                    <li>Charge listrik</li>
-                                    <li>MCK</li>
-                                </ul>
-                            </div>
+                            <div class="card-description"></div>
                         </div>
-                        <div class="title-items">CAMP BALCONY</div>
+                        <div class="title-items">OUTBOUND</div>
                     </div>
 
-                    <!-- Program -->
                     <div class="swiper-slide">
                         <div class="card-camp">
-                            <div class="card-image" style="background-image:url('/assets/img/CAMP-FAMILY2.png');">
-                            </div>
-                            <div class="card-description">
-                                <div class="price">Rp. 650.000<span class="per-day">/Day</span></div>
-                                <div class="duration">Duration : 2 Days 1 Night/ 4 Person</div>
-                                <div class="divider"></div>
-                                <ul class="facility">
-                                    <li>HTM (4 Person)</li>
-                                    <li>Asuransi</li>
-                                    <li>Tenda Arpenaz 4.0</li>
-                                    <li>Lampu Tenda</li>
-                                    <li>Matras Spon</li>
-                                    <li>Charge listrik</li>
-                                    <li>MCK</li>
-                                </ul>
-                            </div>
+                            <div class="card-image"
+                                style="background-image:url('/assets/img/program/team-building.jpg');"></div>
+                            <div class="card-description"></div>
                         </div>
-                        <div class="title-items">CAMP BALCONY</div>
+                        <div class="title-items">TEAM BUILDING</div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card-camp">
+                            <div class="card-image" style="background-image:url('/assets/img/program/outing.jpg');">
+                            </div>
+                            <div class="card-description"></div>
+                        </div>
+                        <div class="title-items">OUTING</div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card-camp">
+                            <div class="card-image" style="background-image:url('/assets/img/program/gathering.jpg');">
+                            </div>
+                            <div class="card-description"></div>
+                        </div>
+                        <div class="title-items">GATHERING</div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card-camp">
+                            <div class="card-image"
+                                style="background-image:url('/assets/img/program/kepramukaan.jpg');"></div>
+                            <div class="card-description"></div>
+                        </div>
+                        <div class="title-items">KEPRAMUKAAN</div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card-camp">
+                            <div class="card-image"
+                                style="background-image:url('/assets/img/program/tadabur-alam.jpg');"></div>
+                            <div class="card-description"></div>
+                        </div>
+                        <div class="title-items">TADABUR ALAM</div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card-camp">
+                            <div class="card-image" style="background-image:url('/assets/img/program/sanlat.jpg');">
+                            </div>
+                            <div class="card-description"></div>
+                        </div>
+                        <div class="title-items">SANLAT</div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card-camp">
+                            <div class="card-image"
+                                style="background-image:url('/assets/img/program/baris-berbaris.jpg');"></div>
+                            <div class="card-description"></div>
+                        </div>
+                        <div class="title-items">PELATIHAN BARIS BERBARIS</div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card-camp">
+                            <div class="card-image"
+                                style="background-image:url('/assets/img/program/kewirakoperasian.jpg');"></div>
+                            <div class="card-description"></div>
+                        </div>
+                        <div class="title-items">PELATIHAN KEWIRAKOPERASIAN</div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card-camp">
+                            <div class="card-image"
+                                style="background-image:url('/assets/img/program/kewirausahaan.jpg');"></div>
+                            <div class="card-description"></div>
+                        </div>
+                        <div class="title-items">PELATIHAN KEWIRAUSAHAAN</div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card-camp">
+                            <div class="card-image" style="background-image:url('/assets/img/program/agrobisnis.jpg');">
+                            </div>
+                            <div class="card-description"></div>
+                        </div>
+                        <div class="title-items">PELATIHAN AGROBISNIS</div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card-camp">
+                            <div class="card-image" style="background-image:url('/assets/img/program/manajerial.jpg');">
+                            </div>
+                            <div class="card-description"></div>
+                        </div>
+                        <div class="title-items">PELATIHAN MANAJERIAL</div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="card-camp">
+                            <div class="card-image" style="background-image:url('/assets/img/event.png');"></div>
+                            <div class="card-description"></div>
+                        </div>
+                        <div class="title-items">WISATA ALAM KEBUN RAYA AIR TERJUN CIBEREUM</div>
                     </div>
 
                 </div>
             </div>
         </div>
     </section>
-
     <!-- ===================== Sections Tiket ===================== -->
     <section id="package" class="section-tiket">
-        <div class="title-section-header">
+        <div class="title-section-header" data-aos="fade-down" data-aos-duration="1200">
             <h1>Price Tiket</h1>
         </div>
-        <div class="container">
+        <div class="container" data-aos="zoom-out-up" data-aos-duration="1200">
             <div class="card__container">
                 <!-- Tiket 1 -->
                 <article class="card__article">
@@ -415,19 +502,19 @@
     </section>
     <!-- ===================== Sections Explore ===================== -->
     <section id="explore" class="section-explore">
-        <div class="title-section-header">
+        <div class="title-section-header" data-aos="fade-down" data-aos-duration="1200">
             <h1>Explore</h1>
         </div>
         <!-- EUCALYPTUS 1 -->
-        <div class="title-items">EUCALYPTUS 1</div>
-        <div class="content-explore">
+        <div class="title-items" data-aos="fade-down" data-aos-duration="1200">EUCALYPTUS 1</div>
+        <div class="content-explore" data-aos="zoom-out-up" data-aos-duration="1200">
             <div class="slider" data-slider>
                 <div class="slider-container" data-slider-container>
                     <div class="slider-item"><img src="/assets/img/EU-1.png"></div>
-                    <div class="slider-item"><img src="/assets/img/EU-2.png"></div>
-                    <div class="slider-item"><img src="/assets/img/EU-3.png"></div>
-                    <div class="slider-item"><img src="/assets/img/EU-4.png"></div>
-                    <div class="slider-item"><img src="/assets/img/EU-3.png"></div>
+                    <div class="slider-item"><img src="/assets/img/EU-.png"></div>
+                    <div class="slider-item"><img src="/assets/img/EU-.png"></div>
+                    <div class="slider-item"><img src="/assets/img/EU-.png"></div>
+                    <div class="slider-item"><img src="/assets/img/EU-.png"></div>
                 </div>
             </div>
             <div class="slider-controls">
@@ -443,15 +530,15 @@
         </div>
 
         <!-- EUCALYPTUS 2 -->
-        <div class="title-items">EUCALYPTUS 2</div>
-        <div class="content-explore">
+        <div class="title-items"  data-aos="fade-down" data-aos-duration="1200">EUCALYPTUS 2</div>
+        <div class="content-explore" data-aos="zoom-out-up" data-aos-duration="1200">
             <div class="slider" data-slider>
                 <div class="slider-container" data-slider-container>
-                    <div class="slider-item"><img src="/assets/img/EU-1.png"></div>
                     <div class="slider-item"><img src="/assets/img/EU-2.png"></div>
-                    <div class="slider-item"><img src="/assets/img/EU-3.png"></div>
-                    <div class="slider-item"><img src="/assets/img/EU-4.png"></div>
-                    <div class="slider-item"><img src="/assets/img/EU-3.png"></div>
+                    <div class="slider-item"><img src="/assets/img/EU-.png"></div>
+                    <div class="slider-item"><img src="/assets/img/EU-.png"></div>
+                    <div class="slider-item"><img src="/assets/img/EU-.png"></div>
+                    <div class="slider-item"><img src="/assets/img/EU-.png"></div>
                 </div>
             </div>
             <div class="slider-controls">
@@ -467,15 +554,15 @@
         </div>
 
         <!-- EUCALYPTUS 3 -->
-        <div class="title-items">EUCALYPTUS 3</div>
-        <div class="content-explore">
+        <div class="title-items"  data-aos="fade-down" data-aos-duration="1200" >EUCALYPTUS 3</div>
+        <div class="content-explore" data-aos="zoom-out-up" data-aos-duration="1200">
             <div class="slider" data-slider>
                 <div class="slider-container" data-slider-container>
-                    <div class="slider-item"><img src="/assets/img/EU-1.png"></div>
-                    <div class="slider-item"><img src="/assets/img/EU-2.png"></div>
                     <div class="slider-item"><img src="/assets/img/EU-3.png"></div>
-                    <div class="slider-item"><img src="/assets/img/EU-4.png"></div>
-                    <div class="slider-item"><img src="/assets/img/EU-3.png"></div>
+                    <div class="slider-item"><img src="/assets/img/EU-.png"></div>
+                    <div class="slider-item"><img src="/assets/img/EU-.png"></div>
+                    <div class="slider-item"><img src="/assets/img/EU-.png"></div>
+                    <div class="slider-item"><img src="/assets/img/EU-.png"></div>
                 </div>
             </div>
             <div class="slider-controls">
@@ -491,15 +578,15 @@
         </div>
 
         <!-- EUCALYPTUS 4 -->
-        <div class="title-items">EUCALYPTUS 4</div>
-        <div class="content-explore">
+        <div class="title-items"  data-aos="fade-down" data-aos-duration="1200">EUCALYPTUS 4</div>
+        <div class="content-explore" data-aos="zoom-out-up" data-aos-duration="1200">
             <div class="slider" data-slider>
                 <div class="slider-container" data-slider-container>
-                    <div class="slider-item"><img src="/assets/img/EU-1.png"></div>
-                    <div class="slider-item"><img src="/assets/img/EU-2.png"></div>
-                    <div class="slider-item"><img src="/assets/img/EU-3.png"></div>
                     <div class="slider-item"><img src="/assets/img/EU-4.png"></div>
-                    <div class="slider-item"><img src="/assets/img/EU-3.png"></div>
+                    <div class="slider-item"><img src="/assets/img/EU-.png"></div>
+                    <div class="slider-item"><img src="/assets/img/EU-.png"></div>
+                    <div class="slider-item"><img src="/assets/img/EU-.png"></div>
+                    <div class="slider-item"><img src="/assets/img/EU-.png"></div>
                 </div>
             </div>
             <div class="slider-controls">
@@ -515,15 +602,15 @@
         </div>
 
         <!-- EUCALYPTUS 5 -->
-        <div class="title-items">EUCALYPTUS 5</div>
-        <div class="content-explore">
+        <div class="title-items"  data-aos="fade-down" data-aos-duration="1200">EUCALYPTUS 5</div>
+        <div class="content-explore" data-aos="zoom-out-up" data-aos-duration="1200">
             <div class="slider" data-slider>
                 <div class="slider-container" data-slider-container>
-                    <div class="slider-item"><img src="/assets/img/EU-1.png"></div>
-                    <div class="slider-item"><img src="/assets/img/EU-2.png"></div>
-                    <div class="slider-item"><img src="/assets/img/EU-3.png"></div>
                     <div class="slider-item"><img src="/assets/img/EU-4.png"></div>
-                    <div class="slider-item"><img src="/assets/img/EU-3.png"></div>
+                    <div class="slider-item"><img src="/assets/img/EU-.png"></div>
+                    <div class="slider-item"><img src="/assets/img/EU-.png"></div>
+                    <div class="slider-item"><img src="/assets/img/EU-.png"></div>
+                    <div class="slider-item"><img src="/assets/img/EU-.png"></div>
                 </div>
             </div>
             <div class="slider-controls">
@@ -541,11 +628,11 @@
     <!-- ===================== Sections About ===================== -->
     <section id="about" class="section-about">
         <div class="content-wrapper">
-            <div class="map-container">
+            <div class="map-container" data-aos="zoom-in-down" data-aos-duration="1200">
                 <img src="assets/img/TEMPORARY-SITE-PLAN.png" alt="Peta Wisata Alam Pangsalatan">
             </div>
 
-            <div class="description">
+            <div class="description" data-aos="zoom-in-up" data-aos-duration="1300">
                 <p>
                     Wisata Alam Pangsalatan adalah destinasi wisata alam di kaki Gunung
                     Gede-Pangrango, Desa Cimacan, Cipanas, Cianjur.
@@ -572,8 +659,8 @@
     </section>
     <!-- ===================== Sections Fasilitas ===================== -->
     <section class="fasilitas" id="about">
-        <div class="title-itemss">Fasilitas</div>
-        <div class="card-container">
+        <div class="title-itemss"  data-aos="fade-down" data-aos-duration="1200">Fasilitas</div>
+        <div class="card-container" data-aos="zoom-out-up" data-aos-duration="1200">
             <div class="fasil-content">
                 <div class="icon"><i class="fa-solid fa-campground"></i></div>
                 <h3>Area Camping</h3>
@@ -614,21 +701,21 @@
     </section>
     <!-- ===================== Sections reviews ===================== -->
     <section id="reviews" class="section-reviews">
-        <div class="title-section-header-rev">
+        <div class="title-section-header-rev" data-aos="fade-down" data-aos-duration="1200">
             <h1>Reviews</h1>
         </div>
-        <div class="google-reviews">
+        <div class="google-reviews" data-aos="zoom-out-up" data-aos-duration="1200">
             <script src="https://elfsightcdn.com/platform.js" async></script>
             <div class="elfsight-app-e99bd3b0-1d83-4c9c-8f61-c008736a34d3" data-elfsight-app-lazy></div>
         </div>
     </section>
     <!-- ===================== Sections Contact ===================== -->
     <section id="contact" class="section-contact">
-        <div class="title-section-header">
+        <div class="title-section-header" data-aos="fade-down" data-aos-duration="1200">
             <h1>Contact</h1>
         </div>
         <div class="container-contact">
-            <div class="contact-left">
+            <div class="contact-left" data-aos="fade-up-right" data-aos-duration="1200">
                 <h2>Where to find us</h2>
                 <div class="map">
                     <iframe
@@ -651,7 +738,7 @@
                 </div>
             </div>
 
-            <div class="contact-right">
+            <div class="contact-right" data-aos="fade-up-left" data-aos-duration="1200">
                 <h2>Leave a message</h2>
                 <form id="contact-form" action="./assets/php/sendemail.php" method="POST">
                     <div class="form-group">
@@ -671,13 +758,15 @@
     <!-- ===================== Sections FAQ ===================== -->
     <section id="contact" class="section-faq">
         <div class="container-faq">
-            <div class="title">
+            <div class="title" data-aos="fade-down" data-aos-duration="1200">
                 Frequently <br> asked <br> questions.
             </div>
-            <div class="faq-list">
+            <div class="faq-list" data-aos="zoom-in-down" data-aos-duration="1200">
+
+                <!-- 1. Bawa Tenda -->
                 <div class="faq-card">
                     <div class="faq-question">
-                        Lorem ipsum dolor sit amet?
+                        Apakah boleh membawa tenda sendiri?
                         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
                                 d="M19 9l-7 7-7-7" />
@@ -685,15 +774,16 @@
                     </div>
                     <div class="faq-answer">
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
-                            labore et dolore magna aliqua.
+                            Boleh banget! Kamu bisa membawa tenda sendiri tanpa ada biaya tambahan.
+                            Tapi kalau mau lebih praktis, kami juga menyediakan sewa tenda dengan berbagai kapasitas.
                         </p>
                     </div>
                 </div>
 
+                <!-- 2. Listrik -->
                 <div class="faq-card">
                     <div class="faq-question">
-                        Praesent sapien massa convallis?
+                        Kak, apakah di area camping tersedia listrik?
                         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
                                 d="M19 9l-7 7-7-7" />
@@ -701,15 +791,16 @@
                     </div>
                     <div class="faq-answer">
                         <p>
-                            Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ac diam
-                            sit amet quam vehicula elementum.
+                            Tersedia! Setiap area camping sudah dilengkapi akses listrik untuk kebutuhan dasar seperti
+                            charging handphone dan lampu penerangan.
                         </p>
                     </div>
                 </div>
 
+                <!-- 3. Parkiran -->
                 <div class="faq-card">
                     <div class="faq-question">
-                        Proin eget tortor risus?
+                        Kak, jauh nggak dari parkiran ke area camping?
                         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
                                 d="M19 9l-7 7-7-7" />
@@ -717,15 +808,16 @@
                     </div>
                     <div class="faq-answer">
                         <p>
-                            Proin eget tortor risus. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet
-                            dui.
+                            Nggak jauh kok! Semua area camping sudah didesain dekat dengan parkiran, rata-rata hanya
+                            butuh beberapa menit jalan kaki.
                         </p>
                     </div>
                 </div>
 
+                <!-- 4. Toilet -->
                 <div class="faq-card">
                     <div class="faq-question">
-                        Pellentesque in ipsum id orci porta?
+                        Apakah tersedia toilet dan kamar mandi di area camping?
                         <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
                                 d="M19 9l-7 7-7-7" />
@@ -733,7 +825,25 @@
                     </div>
                     <div class="faq-answer">
                         <p>
-                            Pellentesque in ipsum id orci porta dapibus. Donec rutrum congue leo eget malesuada.
+                            Iya, tersedia toilet dan kamar mandi di area camping.
+                            Air juga mengalir lancar sehingga pengunjung tetap nyaman selama beraktivitas di camp.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 5. Makanan -->
+                <div class="faq-card">
+                    <div class="faq-question">
+                        Apakah boleh membawa makanan sendiri ke area camping?
+                        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                                d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </div>
+                    <div class="faq-answer">
+                        <p>
+                            Tentu saja boleh! Pengunjung diperbolehkan membawa makanan dan minuman sendiri.
+                            Selain itu, di area camping juga tersedia alera coffe.
                         </p>
                     </div>
                 </div>
@@ -778,7 +888,12 @@
     <!-- ===================== CUSTOM JS ===================== -->
     <script src="./assets/js/main.js" defer></script>
     <!-- ===================== LIBRARIES ===================== -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1200, // durasi animasi default (ms)
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
 
 </body>

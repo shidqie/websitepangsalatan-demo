@@ -92,7 +92,7 @@
 
 html {
     scroll-behavior: smooth;
-    font-family: var(--font-helvetica);
+    font-family: var(--font-manrope);
     color: var(--text-on-light);
     background: var(--bg-light);
 }
@@ -100,6 +100,7 @@ html {
 body {
     overscroll-behavior-x: none;
     overflow-x: hidden;
+        color: var(--text-on-light);
 }
 
 a {
@@ -191,8 +192,11 @@ a {
 .section-title {
     text-align: center;
     font-size: 1.8rem;
+    font-family: var(--font-manrope);
+    font-weight: var(--fw-extrabold);
+    text-transform: uppercase;
     margin: 40px 0 30px;
-    color: #333;
+    color: var(--text-on-light);
 }
 
 .events .container {
@@ -237,6 +241,7 @@ a {
     width: 100%;
     height: 180px;
     object-fit: cover;
+     filter: blur(2px); 
 }
 
 .event-content {
